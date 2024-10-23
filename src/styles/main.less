@@ -1,0 +1,79 @@
+@fontPrincipal: 'Roboto', sans-serif;
+@fontSecudaria:  "Bebas Neue", sans-serif;
+@corFundo: #fff;
+@corPrincipal: white;
+@corSecundaria: #f8f9fa;
+@corDoBotao:#28a745;
+@corBotaoSecundaria:#218838;
+
+
+
+body {
+    font-family: @fontPrincipal;
+    background-color: #eeeeee;
+    margin: 100px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: @corFundo;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-family: @fontSecudaria;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#quantidade{
+    padding: 12px;
+}
+
+form button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: @corDoBotao;
+    color: @corPrincipal;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: @fontSecudaria;
+}
+
+form button:hover {
+    background-color: @corBotaoSecundaria;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid @corSecundaria;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: @corSecundaria;
+}
